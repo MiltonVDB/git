@@ -8,8 +8,26 @@
     <title>Html</title><!-- titulo de la ventana del navegador -->
 </head>
 <body><!-- cuerpo de la pagina -->
+
+
     <header><h2>Soy el Header de la pagina</h2></header>
-    <nav><h2>Soy la navegacion</h2></nav>
+
+    <nav>
+        <h2>Soy la navegacion</h2>
+        <ul><!-- listas desordenadas -->
+            <!-- Items List -->
+            <li>
+                <a href="./index.html">HOME</a> <!-- Anclas: permiten la navegacion, redireccionan a otras paginas-->
+            </li>
+            <li>
+                <a href="./pages/sucursales.html">Sucursales</a>
+            </li>
+            <li>
+                <a href="./pages/productos.html">Productos</a>
+            </li>
+        </ul>
+    </nav>
+
     <main><h2>Soy el Main</h2>
         <h1>Etiqueta de Titulo Nivel 1</h1>
         <hr>
@@ -18,12 +36,12 @@
                 <h3>Los Alimentos</h3>
                 <img src="https://biotrendies.com/wp-content/uploads/2015/06/manzana.jpg" alt="Manzana"><!-- src, poner la URL de la imagen - alt, texto de la imagen si no se puede ver esta -->
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora cumque quisquam deserunt natus velit est. Sapiente consequatur accusantium at distinctio eaque minus, saepe numquam hic facilis mollitia maiores, nostrum quasi! </p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At beatae minus non eligendi repellendus inventore quod, magni sapiente molestiae quia id placeat dignissimos fuga officiis nam atque, culpa consectetur. Repellat.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <strong><a href="./pages/productos.html">Formularios</a></strong> At beatae minus non eligendi repellendus inventore quod, magni sapiente molestiae quia id placeat dignissimos fuga officiis nam atque, culpa consectetur. Repellat.</p>
             </article>
             <article>
                 <h3>Los Alimentos</h3>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora cumque quisquam deserunt natus velit est. Sapiente consequatur accusantium at distinctio eaque minus, saepe numquam hic facilis mollitia maiores, nostrum quasi! </p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At beatae minus non eligendi repellendus inventore quod, magni sapiente molestiae quia id placeat dignissimos fuga officiis nam atque, culpa consectetur. Repellat.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <strong><a href="./pages/productos.html#nombre"></a>Formularios</strong> At beatae minus non eligendi repellendus inventore quod, magni sapiente molestiae quia id placeat dignissimos fuga officiis nam atque, culpa consectetur. Repellat.</p>
             </article>
             <article>
                 <h3>Los Alimentos</h3>
@@ -56,6 +74,13 @@
         <h4>Nivel 4</h4>
         <h5>Nivel 5</h5>
         <h6>Nivel 6</h6>
+
+        <ol><!-- Listas Ordenadas -->
+            <li>Peras</li>
+            <li>Manzanas</li>
+            <li>Bananas</li>
+        </ol>
+
     </main>
     <hr>
     <footer><h2>Soy el Pie de Pagina</h2></footer>

@@ -5,7 +5,17 @@
     <meta charset="UTF-8"> <!-- configuracion del lenguaje -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- responsivo, va a tratar de adaptar la pagina al browser donde se abra -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- responsivo, va a tratar de adaptar la pagina al dispositivo donde se abra -->
+    <link rel="stylesheet" href="./css/index.css"><!-- Hay que vincular el CSS al HTML -->
     <title>Html</title><!-- titulo de la ventana del navegador -->
+
+    <style> /* dentro de esta etiqueta se escribe en codigo CSS y funciona igual que un archivo externo */
+        p{
+            color: black;
+            font-size: medium;
+            background-color: antiquewhite;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
 </head>
 <body><!-- cuerpo de la pagina -->
 
@@ -13,8 +23,8 @@
     <header><h2>Soy el Header de la pagina</h2></header>
 
     <nav>
-        <h2>Soy la navegacion</h2>
-        <ul><!-- listas desordenadas -->
+        <h2 class="soloYo">Soy la navegacion</h2> <!-- Dandole una clase a una etiqueta lo puedo diferenciar de las otras si tienen el mismo nombre -->
+        <ul class="centrar"><!-- listas desordenadas -->
             <!-- Items List -->
             <li>
                 <a href="./index.html">HOME</a> <!-- Anclas: permiten la navegacion, redireccionan a otras paginas-->
@@ -28,19 +38,22 @@
         </ul>
     </nav>
 
-    <main><h2>Soy el Main</h2>
-        <h1>Etiqueta de Titulo Nivel 1</h1>
+    <main>
+        <h2>Soy el Main</h2>
+        
+        <h1 style="color: darkblue; font-size: 60px;"><!-- Esta es la tercera forma de darle estilos a la etiqueta -->Etiqueta de Titulo Nivel 1</h1>
+        
         <hr>
         <section>
             <article>
                 <h3>Los Alimentos</h3>
                 <img src="https://biotrendies.com/wp-content/uploads/2015/06/manzana.jpg" alt="Manzana"><!-- src, poner la URL de la imagen - alt, texto de la imagen si no se puede ver esta -->
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora cumque quisquam deserunt natus velit est. Sapiente consequatur accusantium at distinctio eaque minus, saepe numquam hic facilis mollitia maiores, nostrum quasi! </p>
+                <p id="miParrafo"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora cumque quisquam deserunt natus velit est. Sapiente consequatur accusantium at distinctio eaque minus, saepe numquam hic facilis mollitia maiores, nostrum quasi! </p>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <strong><a href="./pages/productos.html">Formularios</a></strong> At beatae minus non eligendi repellendus inventore quod, magni sapiente molestiae quia id placeat dignissimos fuga officiis nam atque, culpa consectetur. Repellat.</p>
             </article>
             <article>
                 <h3>Los Alimentos</h3>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora cumque quisquam deserunt natus velit est. Sapiente consequatur accusantium at distinctio eaque minus, saepe numquam hic facilis mollitia maiores, nostrum quasi! </p>
+                <p class="centrar texto"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora cumque quisquam deserunt natus velit est. Sapiente consequatur accusantium at distinctio eaque minus, saepe numquam hic facilis mollitia maiores, nostrum quasi! </p>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <strong><a href="./pages/productos.html#nombre"></a>Formularios</strong> At beatae minus non eligendi repellendus inventore quod, magni sapiente molestiae quia id placeat dignissimos fuga officiis nam atque, culpa consectetur. Repellat.</p>
             </article>
             <article>
@@ -83,7 +96,10 @@
 
     </main>
     <hr>
-    <footer><h2>Soy el Pie de Pagina</h2></footer>
+    <footer>
+        <h2>Soy el Pie de Pagina</h2>
+
+    </footer>
 
 </body>
 </html><!-- cierre de etiqueta -->

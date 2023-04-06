@@ -1,0 +1,59 @@
+/* Selector 
+    {
+        Propiedad : Valor;
+        Propiedad : Valor;
+        Propiedad : Valor;
+    }
+*/
+
+
+
+h2{
+    color: red;
+    font-size: 45px;
+    background-color: aquamarine;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+/* Selector de Clase */
+.soloYo{text-align: right;}
+
+.centrar{text-align: center;}
+
+.texto{font-size: 40px;}
+
+/* Selector de ID */
+#miParrafo{
+    color: brown;
+}
+
+h1{
+    /* Borde */
+    border-top: solid 5px black;
+    border-right: dashed 8px blueviolet;
+    border-bottom: solid 10px gray;
+    border-left: double 8px red;
+    /* Relleno */
+    padding-top: 35px;
+    padding-left: 45px;
+    /* Margen */
+    margin-left: 40px;
+}
+
+/* ul{
+    text-align: center;
+}
+ */
+ul li{
+    list-style-type: none;
+    display: inline;;
+    margin: 15px;
+    padding: 25px;
+    border: solid 2px black;
+    background-color: red;
+}
